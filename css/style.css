@@ -3,11 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-}
-
-.fl{
-   float: left;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-pag{
@@ -18,59 +14,60 @@
     position: relative;
 }
 
-.pinkrett{
-    background-color: #E579E6;
-    height: 120px;
-    margin-bottom: 30px;}
+.logo img{
+    border-right: 2px #EDEDED solid;
+    padding-right: 15px;
+    height: 80px;
+}
 
-.yellrett{
-    background-color: #E1D67A;
+.nav li{
+    list-style: none;
+    display: inline-block;
+    color: #ccc;
+    margin: 40px 8px 40px 8px;
+}
+
+.nav li:hover{
+    text-decoration: underline;
+}
+
+.first-banner{
+    width: 1200px;
     height: 500px;
-    margin-bottom: 30px;}
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    position: relative;
+    background-position-y: -150px;
+}
 
-.cont-main{
-    background-color: #0086FF;
+.first-banner div{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    width: 700px;
+    color: white;
+    font-size: 15px;
+}
+
+.first-banner p{
+    font-size: 30px;
+}
+.sec-title{
+    padding:40px 0;
+    color: #ccc;
+}
+.sec-title h3{
+    font-size: 40px;
+    color: black;
+}
+
+.about{
     height: 600px;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    overflow: hidden;
+    background-color: blue;
 }
 
-.cont-main::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.riga-top{
-    background-color: #ABCFE7;
-    float: left;
-    height: 60px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.col-left{
-    background-color: #ABCFE7;
-    float: left;
-    height: 85%;
-    width: 20%;
-}
-
-.col-mid{
-    background-color: #ABCFE7;
-    float: left;
-    height: 85%;
-    width: 58%;
-    margin: 0 10px 0 10px;
-}
-
-.col-right{
-    background-color: #ABCFE7;
-    float: right;
-    height: 85%;
-    width: 20%;
-}
 .purpfoot{
     background-color: #8801FE;
     width: 100%;
