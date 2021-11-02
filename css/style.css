@@ -34,7 +34,7 @@
 .first-banner{
     width: 1200px;
     height: 500px;
-    background-image: url(../img/banner.jpg);
+    background: url(../img/banner.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -54,22 +54,113 @@
 .first-banner p{
     font-size: 30px;
 }
-.sec-title{
+.cont-main{
+    height: 750px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.cont-main::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.riga-top{
     padding:40px 0;
     color: #ccc;
+    background-color: white;
 }
-.sec-title h3{
+.riga-top h3{
     font-size: 40px;
     color: black;
 }
 
-.about{
-    height: 600px;
-    background-color: blue;
+.col-left{
+    float: left;
+    height: 85%;
+    width: 20%;
+    background-color: white;
+}
+.col-left::before{
+    background-color: rgba(7, 2, 2, 0.17);
+    content: '';
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    z-index: 1001;
+    border-radius: 15px;
 }
 
-.purpfoot{
-    background-color: #8801FE;
+.col-left img{
     width: 100%;
-    height: 30px;
+}
+.col-left p{
+    font-size: 17px;
+}
+
+.col-left span{
+    color: #ccc;
+}
+
+.col-mid{
+    background-size: 100%;
+    float: left;
+    height: 85%;
+    width: 58%;
+    margin: 0 10px 0 10px;
+    color: #ccc;
+}
+
+.col-mid::before{
+    background-color: rgba(7, 2, 2, 0.17);
+    content: '';
+    display: block;
+    position: absolute;
+    width: 696px;
+    height: 240px;
+    z-index: 1001;
+    border-radius: 15px;
+  }
+
+.col-mid img{
+    width: 100%;
+    height: 240px;
+}
+
+.col-mid p{
+    font-size: 17px;
+    color: black;
+}
+
+.col-right{
+    background-color: white;
+    float: right;
+    height: 85%;
+    width: 20%;
+    color: black;
+}
+.col-right::before{
+    background-color: rgba(7, 2, 2, 0.17);
+    content: '';
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 180px;
+    z-index: 1001;
+    border-radius: 15px;
+}
+
+.col-right span{
+    color: #ccc;
+}
+.cuore{
+    width: 100%;
+    text-align: center;
+}
+
+.cuore span{
+    color: red;
 }
